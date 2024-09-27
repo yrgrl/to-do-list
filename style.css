@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #391557, #9e7fc2);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    transition: background-position 0.5s ease-out;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(105, 20, 161, 0.678);
+}
+.container:hover {
+    background-position: 100% 100%;
+}
+h1 {
+    font-weight: bold;
+    color: #380f5f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c59fe4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #44354b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7c6488;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #d5b7ee;
+    margin: 10px;
+    width: calc(25% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #ac5feb;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+li::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ac5feb;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+li:nth-child(1)::before {
+    background-color: #ff0080;
+}
+
+li:nth-child(2)::before {
+    background-color: #05fd05;
+}
+
+li:nth-child(3)::before {
+    background-color: #03fafa;
+}
+
+li:nth-child(4)::before {
+    background-color: #fa7f04;
+}
+li:nth-child(5)::before {
+    background-color: #fcf805;
+}
+li:nth-child(6)::before {
+    background-color: #fc0505;
+}
+li:nth-child(7)::before {
+    background-color: #0553fc;
+}
+li:nth-child(8)::before {
+    background-color: #fca605;
+}
+li:nth-child(9)::before {
+    background-color: #0f0f0f;
+}
+li:nth-child(10)::before {
+    background-color: #fc05f0;
+}
+.completed {
+    text-decoration: line-through;
+    color: #b4a2bb;
+}
+
+#remaining-tasks {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
